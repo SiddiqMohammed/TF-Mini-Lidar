@@ -34,18 +34,18 @@ void loop() {
           temprature = temprature / 8 - 256;
           Serial.print("dist = ");
           Serial.println(dist); //output measure distance value of LiDAR
-          Serial.print('\t');
-          Serial.print("strength = ");
-          //          Serial.print(strength); //output signal strength value
+//          Serial.print('\t');
+//          Serial.print("strength = ");
+//          Serial.println(strength); //output signal strength value
           //          Serial.print("\t Chip Temprature = ");
           //          Serial.print(temprature);
           //          Serial.println(" celcius degree"); //output chip temperature of Lidar
-          if (dist > 180 && dist < 185) {
+          if (dist > 210 && dist < 220) {
             Serial.println("Yeet");
           }
         }
       }
     }
   }
-  delay(50);
+//  delay(20);
 }
